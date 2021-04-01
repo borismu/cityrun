@@ -34,7 +34,7 @@ export async function submitAnswer(question_id, answer, authToken){
     const response = await fetch('/api/submitAnswer',{
         method: 'POST',
         headers: {
-            'Authorization': `Bearer ${authToken}`,
+            'Authorization': `Token ${authToken}`,
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({

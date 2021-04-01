@@ -14,5 +14,5 @@ class TestView(views.APIView):
 
     def post(self, request, format=None):
         # usernames = [user.username for user in User.objects.all()]
-        usernames = {"isCorrect":False}
+        usernames = {"isCorrect": False}
         return response.Response(usernames)

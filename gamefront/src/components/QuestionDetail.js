@@ -44,12 +44,11 @@ class QuestionDetail extends Component {
                     {question.question_text}
                 </Card.Header>
                 <Card.Body>
-                    <Form>
+                    <Form onSubmit={this.onFormSubmit}>
                         <Form.Group controlId="formBasicEmail">
                             <Form.Label>Answer</Form.Label>
                             <Form.Control type="text" placeholder="Type your answer" onChange={this.onTeamNameChange} value={this.state.name}/>
                         </Form.Group>
-
                         <Button variant="primary" type="submit" disabled={this.state.loading}>
                             Submit answer
                         </Button>
